@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Base Apparel</title>
+</head>
+
+<body>
+    <main>
+        <div id="container">
+            <div id="content-section">
+
+                <div id="logo">
+                    <img src="./images/logo.svg" alt="logo">
+                </div>
+
+                <div id="content">
+                    <h1>We're
+                        <span> coming <br> soon</span>
+                    </h1>
+                    <p>
+                        Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.
+                    </p>
+                    <div id="input-wrapper">
+                        <input type="email" name="email" id="email" placeholder="Email Address" spellcheck="false" onkeyup="validateEmail()">
+                        <img src="./images/icon-error.svg" alt="" id="icon-error">
+                        <button type="submit">
+                            <img src="./images/icon-arrow.svg" alt="icon-arrow">
+                           
+                        </button>
+                    </div>
+                    <span id="email-error"></span>
+                </div>
+
+            </div>
+
+            <!-- <div id="hero section"> -->
+            <img src="./images/hero-desktop.jpg" alt="hero-img">
+            <!-- </div> -->
+
+        </div>
+    </main>
+    <script src="index.js">
+    </script>
+
+    <!-- <script>
+        var email = document.getElementById("email");
+        var emailError = document.getElementById("email-error");
+        var inputWrapper = document.getElementById("input-wrapper");
+        var iconError = document.getElementById("icon-error");
+        var popup = document.getElementById("popup");
+
+
+        function validateEmail() {
+            if (!email.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+                emailError.innerHTML = "Please provide a valid email";
+                inputWrapper.style.borderColor = "red";
+                iconError.style.display = "inline";
+                return false;
+            }
+            emailError.innerHTML = "";
+            emailError.style.color = ""
+            inputWrapper.style.borderColor = "";
+            iconError.style.display = "";
+            return true;
+
+        }
+    </script> -->
+</body>
+
+</html>
+
+</html>
